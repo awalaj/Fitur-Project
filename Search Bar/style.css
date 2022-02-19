@@ -1,0 +1,68 @@
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: lightskyblue;
+}
+#myInput {
+    box-sizing: border-box;
+    background-image: url('../img/images.png');
+    background-position: -5px -5px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    font-size: 19px;
+    padding: 10px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    top: 50%;
+    right: 0%;
+    width: 100%;
+    float: left;
+}
+.dropdown a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    visibility: hidden;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 20px;
+    color: black;
+}
+.close:hover{
+    background-color: #ddd;
+ }
