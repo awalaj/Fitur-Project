@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 10000px;
+}
+
+figure {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  position: absolute;
+  top: 530px;
+  left: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  opacity: 0;
+}
+
+.tolltiptext {
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
+
+.tolltiptext::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+  top: 100%;
+  left: 50%;
+  border-color: transparent transparent transparent #555;
+}
+
+.demo {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, lightblue, lightgreen, lightblue, lightgreen);
+  -webkit-animation: demo 3s linear infinite;
+          animation: demo 3s linear infinite;
+  background-position: right center;
+  background-size: 200% 200%;
+}
+
+@-webkit-keyframes demo {
+  from {
+    background-position: right center;
+  }
+  to {
+    background-position: left center;
+  }
+}
+
+@keyframes demo {
+  from {
+    background-position: right center;
+  }
+  to {
+    background-position: left center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
