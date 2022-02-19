@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    border: 2px solid lightblue;
+    border-radius: 25px;
+    transform: translate(50px,50px);
+    width: 100px;
+}
+div{
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 25px;
+    width: 50px;
+    height: 20px;
+    background-color: aqua;
+}
+.on{
+    left: 45px;
+}
