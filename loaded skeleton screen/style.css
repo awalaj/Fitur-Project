@@ -1,0 +1,64 @@
+
+.contain{
+            transform: translate(200px,200px);
+            width: 290px;
+            height: 100px;
+            padding: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            transform: translateY(20px);
+            background: linear-gradient(90deg,#ccc 0pc, white 40px, #ccc 80px);
+            background-size: 600px;
+            animation: demo1 1.6s linear infinite;
+        }
+        .content div:nth-child(2),
+        .content div:nth-child(3){
+            background: linear-gradient(90deg,#ccc 0px, white 40px, #ccc 80px);
+            background-size: 600px;
+            animation: demo1 1.6s linear infinite;
+            transform: translate(100px, -65px);
+            display: block;
+            width: 220px;
+            top: -100px;
+            height: 15px;
+            left: 90px;
+            border-radius: 25px;
+            padding: 3px;
+            margin: 10px;
+            padding-left: 20px;
+            background-color: #ccc;
+        }
+        .content div:nth-child(1){
+            width: 100px;
+            background: linear-gradient(90deg,#ccc 0px, white 40px, #ccc 80px);
+            background-size: 600px;
+            animation: demo2 1.6s linear infinite;
+            transform: translate(100px, -65px);
+            display: block;
+            top: -100px;
+            height: 15px;
+            left: 90px;
+            border-radius: 25px;
+            padding: 3px;
+            margin: 10px;
+            padding-left: 20px;
+            background-color: #ccc;
+        }
+        @keyframes demo2 {
+            0%{background-position: -32px;}
+            40%,100%{background-position: 225px;}
+        }
+        @keyframes demo1 {
+            0%{
+                background-position: 0px;
+            }
+            40%,100%{
+                background-position: 240px;
+            }
+        }
