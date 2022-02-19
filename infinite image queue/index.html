@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <div class="slide first">
+                <img src="Forest.jpg" alt="Forest">
+            </div>
+            <div class="slide second">
+                <img src="Mountain.jpg" alt="Mountain">
+            </div>
+            <div class="slide third">
+                <img src="snowMountain.jpg" alt="snow mountain">
+            </div>
+
+        </div>
+        <div class="navigator-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+    <script>
+        let count = 1;  
+        setInterval(function(){
+            $(`#radio${count}`).prop("checked", true)
+            count++
+            if(count > 3){
+                count = 0;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
