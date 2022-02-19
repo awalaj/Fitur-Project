@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img-zoom-container {
+            position: relative;
+        }
+        .img-zoom-lens {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            width: 40px;
+            height: 40px;
+        }
+        .img-zoom-result {
+            border: 1px solid #d4d4d4;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-zoom-container">
+        <img id="myimage" src="cat.jfif" width="300" height="240">
+        <div id="myresult" class="img-zoom-result"></div>
+    </div>
+    <script>
+        imageZoom("myimage", "myresult");
+    </script>
+</body>
+</html>
