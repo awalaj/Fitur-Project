@@ -42,31 +42,4 @@ figure {
   border-color: transparent transparent transparent #555;
 }
 
-.demo {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(-45deg, lightblue, lightgreen, lightblue, lightgreen);
-  -webkit-animation: demo 3s linear infinite;
-          animation: demo 3s linear infinite;
-  background-position: right center;
-  background-size: 200% 200%;
-}
-
-@-webkit-keyframes demo {
-  from {
-    background-position: right center;
-  }
-  to {
-    background-position: left center;
-  }
-}
-
-@keyframes demo {
-  from {
-    background-position: right center;
-  }
-  to {
-    background-position: left center;
-  }
-}
 /*# sourceMappingURL=style.css.map */
