@@ -1,21 +1,16 @@
 $(document).ready(function(){
             window.addEventListener("scroll", function(){   
+                console.log(window.pageYOffset)
                 if(window.pageYOffset >= 265){
-                    $("figure").animate({
-                        "opacity" : "1",
-                        "top" : "430px",
-                        "left" : "200px",   
-                        "display" : "block"
-                    }, 1000, function(){
-                        if(window.pageYOffset >= 800){
-                            $("figure").animate({
-                                "opacity" : "0",
-                                "top" : "430px",
-                                "left" : "0px",   
-                                "display" : "none"
-                            }) 
-                            console.log("Halo")
-                        }
+                    $("figure").css({
+                        left : "400px",
+                        opacity : '1'
+                    })
+                }
+                if(window.pageYOffset > 550 && $("figure").css({'left':'400px'})){
+                    $("figure").css({
+                        left : "-200px",
+                        opacity : '0'
                     })
                 }
             })
