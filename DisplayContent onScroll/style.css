@@ -12,7 +12,8 @@
             box-shadow: 0 0 10px black;
             position: absolute;
             top: 530px;
-            left: 0px;
+            left: -200px;
+            transition: left 5s, opacity 5s;
             font-family: 'Courier New', Courier, monospace;
             display: block;
             opacity: 0;
